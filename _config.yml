@@ -1,0 +1,51 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: https://macols.github.io
+title: Service Fabric Launch Point
+email: t-maols@microsoft.com
+author: MacKenzie Olson
+description: Centralized source for all resources (from Service Fabric developers and users alike) in one convenient location.
+#copyright: 'Copyright &copy; 2018 Microsoft. All Rights Reserved.'
+#credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-github-metadata
+
+twitter:
+    username: servicefabric
+    card: summary
+
+logo: /img/test.jpg
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: github
+    url: https://github.com/Microsoft/service-fabric
+  - title: linkedin
+    url: https://www.linkedin.com/groups/8526708/profile
+  - title: stack-overflow
+    url: https://stackoverflow.com/questions/tagged/azure-service-fabric
+  - title: twitter
+    url: https://twitter.com/servicefabric?lang=en
+  - title: calendar
+    url: https://msit.powerbi.com/view?r=eyJrIjoiMGEwMWQ0NTItMTQ0Zi00Y2JlLThmMWEtNTc4ZjEzNjJhZDY5IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9
+
+# ----------------------- #
+#   Google Analytics      #
+# ----------------------- #
+google_analytics: UA-124284433-1

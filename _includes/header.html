@@ -1,0 +1,94 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="https://azure.microsoft.com/en-us/services/service-fabric/">{{ site.title }}</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#getStarted">Get Started</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#resources">Resources</a>
+                </li>
+            <!-- update with number of notifications -->
+                <li>
+                    <a class="page-scroll" href="#contact">What's New <span class="badge">3</span></a>
+                </li>
+                <li>
+                    <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+                        <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+                    </a>
+                </li>
+            </ul>
+        </div> 
+        <!-- /.navbar-collapse -->
+
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- Search Modal -->
+<div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Search Service Fabric</h4>
+            </div>
+            <div class="modal-body">
+                <script>
+                    (function () {
+                        var cx = '011567693072733048139:r-eqtx1qbci';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                            '//cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                    })();
+                </script>
+                <gcse:search></gcse:search>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<section id="home">
+    <!-- Header -->
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Service Fabric</h1>
+                        <h1 style="font-size:34pt !important">Launch Point</h1>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            {% for social in site.social %}
+                                <li>
+                                    <a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
